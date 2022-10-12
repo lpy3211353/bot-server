@@ -30,7 +30,7 @@ public class UserInfoGatewayImpl extends ServiceImpl<UserInfoMapper, UserInfoEnt
 
     @Override
     public boolean updateByQqNumber(UserInfoEntity entity) {
-        return update(entity,new LambdaUpdateWrapper<UserInfoEntity>()
-                .ge(UserInfoEntity::getQqNumber,entity.getQqNumber()));
+        return update(entity, new LambdaUpdateWrapper<UserInfoEntity>()
+                .ge(UserInfoEntity::getQqNumber, entity.getQqNumber()));
     }
 }

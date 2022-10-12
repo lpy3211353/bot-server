@@ -11,6 +11,6 @@ import org.springframework.stereotype.Component;
 public class ShortMsgGatewayImpl implements ShortMsgGateway {
     @Override
     public void mockSendMsg() {
-      log.info("发送短信！");
+        log.info("发送短信！");
     }
 }

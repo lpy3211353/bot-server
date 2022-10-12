@@ -22,7 +22,7 @@ public class UserInfoDomainImpl implements UserInfoDomain {
     public boolean upsert(UserInfoEntity entity) {
         try {
             userInfoGateway.addUser(entity);
-        }catch (DuplicateKeyException e){
+        } catch (DuplicateKeyException e) {
             userInfoGateway.updateByQqNumber(entity);
             shortMsgGateway.mockSendMsg();
         }

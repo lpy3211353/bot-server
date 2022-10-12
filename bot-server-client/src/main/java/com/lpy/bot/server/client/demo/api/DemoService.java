@@ -5,6 +5,8 @@ import com.lpy.bot.server.client.demo.dto.PayloadDemoResp;
 
 public interface DemoService {
     void demo(DemoReq req);
+
     PayloadDemoResp payloadDemo(String id);
+
     void domainDemo(DemoReq req);
 }
