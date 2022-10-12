@@ -22,6 +22,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+            <version>1.18.24</version>
             <optional>true</optional>
         </dependency>
         <dependency>
@@ -30,8 +31,17 @@
             <version>3.12.0</version>
         </dependency>
         <dependency>
+            <groupId>com.lpy</groupId>
+            <artifactId>bot-server-commons</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-tx</artifactId>
+            <version>5.3.21</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
             <version>5.3.21</version>
         </dependency>
         <dependency>

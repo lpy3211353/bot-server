@@ -29,6 +29,10 @@
         </dependency>
         <dependency>
             <groupId>com.lpy</groupId>
+            <artifactId>bot-server-commons</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.lpy</groupId>
             <artifactId>bot-server-domain</artifactId>
         </dependency>
     </dependencies>

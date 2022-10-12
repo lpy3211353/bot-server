@@ -1,0 +1,23 @@
+###
+POST http://localhost:8080/demo/demo
+Content-Type: application/json
+
+{
+  "qqNumber": "931731014"
+}
+
+###
+POST http://localhost:8080/demo/payload
+Content-Type: application/json
+
+{
+  "id": "1580110904881655809"
+}
+
+###
+POST http://localhost:8080/demo/domain
+Content-Type: application/json
+
+{
+  "qqNumber": "931731014"
+}
