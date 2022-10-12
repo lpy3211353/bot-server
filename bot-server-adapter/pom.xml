@@ -37,5 +37,9 @@
             <groupId>com.lpy</groupId>
             <artifactId>bot-server-client</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.lpy</groupId>
+            <artifactId>bot-server-commons</artifactId>
+        </dependency>
     </dependencies>
 </project>

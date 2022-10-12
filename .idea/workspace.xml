@@ -4,12 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dd2e31a-62c9-4d3d-8098-477fed04703a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/bot-server-entry/src/main/java/com/lpy/bot/server/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bot-server-entry/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="7dd2e31a-62c9-4d3d-8098-477fed04703a" name="Changes" comment="refactor: 架构调整">
+      <change afterPath="$PROJECT_DIR$/bot-server-adapter/src/main/java/com/lpy/bot/server/adapter/DemoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot-server-app/src/main/java/com/lpy/bot/server/application/demo/DemoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot-server-client/src/main/java/com/lpy/bot/server/client/demo/api/DemoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot-server-client/src/main/java/com/lpy/bot/server/client/demo/dto/DemoReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot-server-client/src/main/java/com/lpy/bot/server/client/demo/dto/PayloadDemoResp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot-server-commons/src/main/java/com/lpy/bot/server/commons/config/EntityFieldFillAutoConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot-server-commons/src/main/java/com/lpy/bot/server/commons/protocol/PayloadResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot-server-commons/src/main/java/com/lpy/bot/server/commons/protocol/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot-server-commons/src/main/java/com/lpy/bot/server/commons/security/HashUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot-server-commons/src/main/java/com/lpy/bot/server/commons/util/BeanCopyUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot-server-domain/src/main/java/com/lpy/bot/server/domain/shortmsg/ShortMsgGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot-server-domain/src/main/java/com/lpy/bot/server/domain/userinfo/bo/DemoAddInfoBo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot-server-domain/src/main/java/com/lpy/bot/server/domain/userinfo/entity/UserInfoEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot-server-domain/src/main/java/com/lpy/bot/server/domain/userinfo/gateway/UserInfoGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot-server-domain/src/main/java/com/lpy/bot/server/domain/userinfo/service/UserInfoDomain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot-server-domain/src/main/java/com/lpy/bot/server/domain/userinfo/service/impl/UserInfoDomainImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot-server-infra/src/main/java/com/lpy/bot/server/infra/shortmsg/ShortMsgGatewayImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot-server-infra/src/main/java/com/lpy/bot/server/infra/userinfo/gateway/UserInfoGatewayImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot-server-infra/src/main/java/com/lpy/bot/server/infra/userinfo/mapper/UserInfoMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot-server-infra/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-infra/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot-server-adapter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-adapter/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot-server-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-app/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot-server-commons/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-commons/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot-server-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-domain/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot-server-entry/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-entry/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +39,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -51,7 +72,13 @@
     "jdk.selected.JAVA_MODULE": "1.8",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="ReactorSettings">
@@ -65,7 +92,23 @@
       <recent name="C:\Users\liangpengyu\Desktop\bot-server\bot-server-entry\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="HTTP Request.generated-requests | #11">
+    <configuration name="UuidGenerate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lpy.bot.server.commons.util.UuidGenerate" />
+      <module name="bot-server-commons" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lpy.bot.server.commons.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="generated-requests | #11" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="11" requestIdentifier="#11" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="bot-server-entry" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.lpy.bot.server.Application" />
@@ -81,7 +124,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.generated-requests | #11" />
         <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="Application.UuidGenerate" />
       </list>
     </recent_temporary>
   </component>
@@ -93,8 +138,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665478444333</updated>
-      <workItem from="1665478446277" duration="7484000" />
+      <workItem from="1665478446277" duration="21411000" />
     </task>
+    <task id="LOCAL-00001" summary="refactor: 架构调整">
+      <created>1665542420140</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665542420140</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,5 +163,20 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="refactor: 架构调整" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: 架构调整" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bot-server-app/src/main/java/com/lpy/bot/server/application/demo/DemoServiceImpl.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
