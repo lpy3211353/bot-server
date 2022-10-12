@@ -27,7 +27,8 @@ public class DemoController {
 
     @PostMapping("/payload")
     public PayloadResponse<PayloadDemoResp> payloadResponseDemo(@RequestBody DemoReq req) {
-        return PayloadResponse.of(demoService.payloadDemo(req.getId()));
+        PayloadDemoResp resp = demoService.payloadDemo(req.getId());
+        return PayloadResponse.of(resp);
     }
 
     @PostMapping("/domain")

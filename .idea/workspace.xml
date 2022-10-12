@@ -4,32 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dd2e31a-62c9-4d3d-8098-477fed04703a" name="Changes" comment="refactor: 架构调整">
-      <change afterPath="$PROJECT_DIR$/bot-server-adapter/src/main/java/com/lpy/bot/server/adapter/DemoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bot-server-app/src/main/java/com/lpy/bot/server/application/demo/DemoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bot-server-client/src/main/java/com/lpy/bot/server/client/demo/api/DemoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bot-server-client/src/main/java/com/lpy/bot/server/client/demo/dto/DemoReq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bot-server-client/src/main/java/com/lpy/bot/server/client/demo/dto/PayloadDemoResp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bot-server-commons/src/main/java/com/lpy/bot/server/commons/config/EntityFieldFillAutoConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bot-server-commons/src/main/java/com/lpy/bot/server/commons/protocol/PayloadResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bot-server-commons/src/main/java/com/lpy/bot/server/commons/protocol/Response.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bot-server-commons/src/main/java/com/lpy/bot/server/commons/security/HashUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bot-server-commons/src/main/java/com/lpy/bot/server/commons/util/BeanCopyUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bot-server-domain/src/main/java/com/lpy/bot/server/domain/shortmsg/ShortMsgGateway.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bot-server-domain/src/main/java/com/lpy/bot/server/domain/userinfo/bo/DemoAddInfoBo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bot-server-domain/src/main/java/com/lpy/bot/server/domain/userinfo/entity/UserInfoEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bot-server-domain/src/main/java/com/lpy/bot/server/domain/userinfo/gateway/UserInfoGateway.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bot-server-domain/src/main/java/com/lpy/bot/server/domain/userinfo/service/UserInfoDomain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bot-server-domain/src/main/java/com/lpy/bot/server/domain/userinfo/service/impl/UserInfoDomainImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bot-server-infra/src/main/java/com/lpy/bot/server/infra/shortmsg/ShortMsgGatewayImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bot-server-infra/src/main/java/com/lpy/bot/server/infra/userinfo/gateway/UserInfoGatewayImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bot-server-infra/src/main/java/com/lpy/bot/server/infra/userinfo/mapper/UserInfoMapper.java" afterDir="false" />
+    <list default="true" id="7dd2e31a-62c9-4d3d-8098-477fed04703a" name="Changes" comment="add: 添加demo">
+      <change afterPath="$PROJECT_DIR$/bot-server-app/src/main/java/com/lpy/bot/server/application/demo/mapper/UserInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot-server-entry/src/test/java/api/Demo.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot-server-adapter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-adapter/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot-server-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-app/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot-server-adapter/src/main/java/com/lpy/bot/server/adapter/DemoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-adapter/src/main/java/com/lpy/bot/server/adapter/DemoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot-server-app/src/main/java/com/lpy/bot/server/application/demo/DemoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-app/src/main/java/com/lpy/bot/server/application/demo/DemoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot-server-client/src/main/java/com/lpy/bot/server/client/demo/dto/PayloadDemoResp.java" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-client/src/main/java/com/lpy/bot/server/client/demo/dto/PayloadDemoResp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bot-server-commons/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-commons/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot-server-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-domain/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot-server-commons/src/main/java/com/lpy/bot/server/commons/protocol/PayloadResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-commons/src/main/java/com/lpy/bot/server/commons/protocol/PayloadResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot-server-commons/src/main/java/com/lpy/bot/server/commons/protocol/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-commons/src/main/java/com/lpy/bot/server/commons/protocol/Response.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot-server-domain/src/main/java/com/lpy/bot/server/domain/userinfo/gateway/UserInfoGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-domain/src/main/java/com/lpy/bot/server/domain/userinfo/gateway/UserInfoGateway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot-server-domain/src/main/java/com/lpy/bot/server/domain/userinfo/service/impl/UserInfoDomainImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-domain/src/main/java/com/lpy/bot/server/domain/userinfo/service/impl/UserInfoDomainImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bot-server-entry/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-entry/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot-server-infra/src/main/java/com/lpy/bot/server/infra/userinfo/gateway/UserInfoGatewayImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-infra/src/main/java/com/lpy/bot/server/infra/userinfo/gateway/UserInfoGatewayImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +27,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="HTTP Request" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -70,6 +59,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -92,19 +82,20 @@
       <recent name="C:\Users\liangpengyu\Desktop\bot-server\bot-server-entry\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="HTTP Request.generated-requests | #11">
-    <configuration name="UuidGenerate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lpy.bot.server.commons.util.UuidGenerate" />
-      <module name="bot-server-commons" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lpy.bot.server.commons.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean compile" />
+    </option>
+  </component>
+  <component name="RunManager" selected="HTTP Request.Demo | #3">
+    <configuration name="Demo | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/bot-server-entry/src/test/java/api/Demo.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="Demo | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/bot-server-entry/src/test/java/api/Demo.http" index="2" requestIdentifier="#2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="Demo | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/bot-server-entry/src/test/java/api/Demo.http" index="3" requestIdentifier="#3" runType="Run single request">
+      <method v="2" />
     </configuration>
     <configuration name="generated-requests | #11" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="11" requestIdentifier="#11" runType="Run single request">
       <method v="2" />
@@ -124,9 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.generated-requests | #11" />
+        <item itemvalue="HTTP Request.Demo | #3" />
         <item itemvalue="Spring Boot.Application" />
-        <item itemvalue="Application.UuidGenerate" />
+        <item itemvalue="HTTP Request.Demo | #1" />
+        <item itemvalue="HTTP Request.Demo | #2" />
+        <item itemvalue="HTTP Request.generated-requests | #11" />
       </list>
     </recent_temporary>
   </component>
@@ -138,7 +131,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665478444333</updated>
-      <workItem from="1665478446277" duration="21411000" />
+      <workItem from="1665478446277" duration="25186000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: 架构调整">
       <created>1665542420140</created>
@@ -147,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665542420140</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add: 添加demo">
+      <created>1665562833603</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665562833604</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,15 +166,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="refactor: 架构调整" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: 架构调整" />
+    <MESSAGE value="add: 添加demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: 添加demo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/bot-server-app/src/main/java/com/lpy/bot/server/application/demo/DemoServiceImpl.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="2" />
+          <line>46</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

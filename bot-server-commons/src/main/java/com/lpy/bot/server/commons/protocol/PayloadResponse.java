@@ -1,5 +1,10 @@
 package com.lpy.bot.server.commons.protocol;
 
+import com.fasterxml.jackson.databind.PropertyNamingStrategies;
+import com.fasterxml.jackson.databind.annotation.JsonNaming;
+import lombok.*;
+
+@JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
 public class PayloadResponse<T> extends Response {
     private T data;
 

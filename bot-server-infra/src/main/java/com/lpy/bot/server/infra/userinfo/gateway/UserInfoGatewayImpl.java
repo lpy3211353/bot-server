@@ -1,5 +1,6 @@
 package com.lpy.bot.server.infra.userinfo.gateway;
 
+import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.lpy.bot.server.domain.userinfo.entity.UserInfoEntity;
 import com.lpy.bot.server.domain.userinfo.gateway.UserInfoGateway;
@@ -23,7 +24,13 @@ public class UserInfoGatewayImpl extends ServiceImpl<UserInfoMapper, UserInfoEnt
     }
 
     @Override
-    public boolean update(UserInfoEntity entity) {
+    public boolean updateById(UserInfoEntity entity) {
         return updateById(entity);
+    }
+
+    @Override
+    public boolean updateByQqNumber(UserInfoEntity entity) {
+        return update(entity,new LambdaUpdateWrapper<UserInfoEntity>()
+                .ge(UserInfoEntity::getQqNumber,entity.getQqNumber()));
     }
 }

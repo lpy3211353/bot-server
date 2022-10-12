@@ -8,5 +8,7 @@ public interface UserInfoGateway {
 
     UserInfoEntity queryById(String id);
 
-    boolean update(UserInfoEntity entity);
+    boolean updateById(UserInfoEntity entity);
+
+    boolean updateByQqNumber(UserInfoEntity entity);
 }

@@ -28,6 +28,7 @@ public class DemoServiceImpl implements DemoService {
         UserInfoEntity userInfoEntity = UserInfoEntity.builder()
                 .qqNumber(HashUtil.toSha256(req.getQqNumber()))
                 .build();
+        userInfoEntity.generatorUuid();
         userInfoGateway.addUser(userInfoEntity);
         shortMsgGateway.mockSendMsg();
     }
@@ -35,7 +36,6 @@ public class DemoServiceImpl implements DemoService {
     @Override
     public PayloadDemoResp payloadDemo(String id) {
         UserInfoEntity entity = userInfoGateway.queryById(id);
-        entity.generatorUuid();
         return BeanCopyUtils.copy(entity, PayloadDemoResp.class);
     }
 
