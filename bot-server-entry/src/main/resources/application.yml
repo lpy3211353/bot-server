@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: lpy-bot-server
+  datasource:
+    name: root
+    password: aabbccdd
+    url: jdbc:mysql://124.221.74.242:10011/robot
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis-plus:
+  configuration:
+    default-enum-type-handler: com.baomidou.mybatisplus.core.handlers.MybatisEnumTypeHandler
