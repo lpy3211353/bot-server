@@ -4,20 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dd2e31a-62c9-4d3d-8098-477fed04703a" name="Changes" comment="add: 添加demo">
-      <change afterPath="$PROJECT_DIR$/bot-server-app/src/main/java/com/lpy/bot/server/application/demo/mapper/UserInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bot-server-entry/src/test/java/api/Demo.http" afterDir="false" />
+    <list default="true" id="7dd2e31a-62c9-4d3d-8098-477fed04703a" name="Changes" comment="chg: UUID改用NANOID">
+      <change afterPath="$PROJECT_DIR$/bot-server-commons/src/main/java/com/lpy/bot/server/commons/util/NanoIdUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot-server-entry/src/test/java/FunctionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot-server-adapter/src/main/java/com/lpy/bot/server/adapter/DemoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-adapter/src/main/java/com/lpy/bot/server/adapter/DemoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot-server-app/src/main/java/com/lpy/bot/server/application/demo/DemoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-app/src/main/java/com/lpy/bot/server/application/demo/DemoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot-server-client/src/main/java/com/lpy/bot/server/client/demo/dto/PayloadDemoResp.java" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-client/src/main/java/com/lpy/bot/server/client/demo/dto/PayloadDemoResp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bot-server-commons/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-commons/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot-server-commons/src/main/java/com/lpy/bot/server/commons/protocol/PayloadResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-commons/src/main/java/com/lpy/bot/server/commons/protocol/PayloadResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot-server-commons/src/main/java/com/lpy/bot/server/commons/protocol/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-commons/src/main/java/com/lpy/bot/server/commons/protocol/Response.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot-server-domain/src/main/java/com/lpy/bot/server/domain/userinfo/gateway/UserInfoGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-domain/src/main/java/com/lpy/bot/server/domain/userinfo/gateway/UserInfoGateway.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot-server-domain/src/main/java/com/lpy/bot/server/domain/userinfo/service/impl/UserInfoDomainImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-domain/src/main/java/com/lpy/bot/server/domain/userinfo/service/impl/UserInfoDomainImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot-server-entry/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-entry/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot-server-infra/src/main/java/com/lpy/bot/server/infra/userinfo/gateway/UserInfoGatewayImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-infra/src/main/java/com/lpy/bot/server/infra/userinfo/gateway/UserInfoGatewayImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot-server-domain/src/main/java/com/lpy/bot/server/domain/userinfo/entity/UserInfoEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-domain/src/main/java/com/lpy/bot/server/domain/userinfo/entity/UserInfoEntity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,9 +19,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTTP Request" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -97,8 +89,15 @@
     <configuration name="Demo | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/bot-server-entry/src/test/java/api/Demo.http" index="3" requestIdentifier="#3" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="generated-requests | #11" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="11" requestIdentifier="#11" runType="Run single request">
-      <method v="2" />
+    <configuration name="FunctionTest.NnoIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bot-server-entry" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FunctionTest" />
+      <option name="METHOD_NAME" value="NnoIdTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="bot-server-entry" />
@@ -116,10 +115,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="HTTP Request.Demo | #3" />
-        <item itemvalue="Spring Boot.Application" />
         <item itemvalue="HTTP Request.Demo | #1" />
+        <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="JUnit.FunctionTest.NnoIdTest" />
         <item itemvalue="HTTP Request.Demo | #2" />
-        <item itemvalue="HTTP Request.generated-requests | #11" />
       </list>
     </recent_temporary>
   </component>
@@ -131,7 +130,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665478444333</updated>
-      <workItem from="1665478446277" duration="25186000" />
+      <workItem from="1665478446277" duration="27987000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: 架构调整">
       <created>1665542420140</created>
@@ -147,7 +146,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665562833604</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix: 修复报错问题">
+      <created>1665566367142</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665566367142</updated>
+    </task>
+    <task id="LOCAL-00004" summary="style: 代码格式化">
+      <created>1665566592468</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665566592468</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,17 +180,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="refactor: 架构调整" />
     <MESSAGE value="add: 添加demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: 添加demo" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/bot-server-app/src/main/java/com/lpy/bot/server/application/demo/DemoServiceImpl.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="fix: 修复报错问题" />
+    <MESSAGE value="style: 代码格式化" />
+    <MESSAGE value="chg: UUID改用NANOID" />
+    <option name="LAST_COMMIT_MESSAGE" value="chg: UUID改用NANOID" />
   </component>
 </project>

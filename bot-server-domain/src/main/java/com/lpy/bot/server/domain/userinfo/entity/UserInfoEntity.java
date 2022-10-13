@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.lpy.bot.server.commons.util.NanoIdUtil;
 import lombok.*;
 
 import java.util.Date;
@@ -28,6 +29,6 @@ public class UserInfoEntity {
     private String updateTime;
 
     public void generatorUuid() {
-        this.id = UUID.randomUUID().toString();
+        this.id = NanoIdUtil.randomNanoId();
     }
 }
