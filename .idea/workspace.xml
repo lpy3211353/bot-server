@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dd2e31a-62c9-4d3d-8098-477fed04703a" name="Changes" comment="chg: UUID改用NANOID">
-      <change afterPath="$PROJECT_DIR$/bot-server-commons/src/main/java/com/lpy/bot/server/commons/util/NanoIdUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bot-server-entry/src/test/java/FunctionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot-server-commons/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-commons/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bot-server-domain/src/main/java/com/lpy/bot/server/domain/userinfo/entity/UserInfoEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-domain/src/main/java/com/lpy/bot/server/domain/userinfo/entity/UserInfoEntity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -130,7 +127,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665478444333</updated>
-      <workItem from="1665478446277" duration="27987000" />
+      <workItem from="1665478446277" duration="28821000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: 架构调整">
       <created>1665542420140</created>
@@ -160,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665566592468</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="chg: UUID改用NANOID">
+      <created>1665630058340</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665630058340</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

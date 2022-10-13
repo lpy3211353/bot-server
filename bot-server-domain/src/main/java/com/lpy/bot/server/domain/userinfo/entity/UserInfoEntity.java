@@ -29,6 +29,6 @@ public class UserInfoEntity {
     private String updateTime;
 
     public void generatorUuid() {
-        this.id = NanoIdUtil.randomNanoId();
+        setId(NanoIdUtil.randomNanoId());
     }
 }

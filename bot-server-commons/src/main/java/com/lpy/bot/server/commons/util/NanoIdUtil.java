@@ -14,10 +14,21 @@ public final class NanoIdUtil {
 
     }
 
+    /**
+     * 默认生成NanoId 二十位纯数字
+     * @return 20位纯数字NanoId
+     */
     public static String randomNanoId() {
         return randomNanoId(DEFAULT_NUMBER_GENERATOR, DEFAULT_ALPHABET, DEFAULT_SIZE);
     }
 
+    /**
+     *
+     * @param random 随机random
+     * @param alphabet 字符集
+     * @param size 长度
+     * @return 指定的NanoId
+     */
     public static String randomNanoId(Random random, char[] alphabet, int size) {
         if (random == null) {
             throw new IllegalArgumentException("random cannot be null");
