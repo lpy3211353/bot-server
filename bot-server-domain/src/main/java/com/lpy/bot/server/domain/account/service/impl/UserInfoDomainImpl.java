@@ -33,7 +33,7 @@ public class UserInfoDomainImpl implements UserInfoDomain {
             log.error("group is null!");
             return false;
         }
-        UserInfoEntity userInfo=UserInfoEntity.builder()
+        UserInfoEntity userInfo = UserInfoEntity.builder()
                 .qqNumber(HashUtil.toSha256(bo.getQqNumber()))
                 .groupSerial(groupInfo.getId())
                 .build();

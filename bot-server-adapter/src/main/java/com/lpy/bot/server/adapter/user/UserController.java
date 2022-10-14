@@ -1,8 +1,8 @@
 package com.lpy.bot.server.adapter.user;
 
 import com.lpy.bot.server.client.demo.api.DemoService;
-import com.lpy.bot.server.client.demo.dto.RegisterReq;
 import com.lpy.bot.server.client.demo.dto.PayloadDemoResp;
+import com.lpy.bot.server.client.demo.dto.RegisterReq;
 import com.lpy.bot.server.commons.protocol.PayloadResponse;
 import com.lpy.bot.server.commons.protocol.Response;
 import lombok.RequiredArgsConstructor;

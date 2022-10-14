@@ -1,15 +1,15 @@
 package com.lpy.bot.server.application.demo;
 
 import com.lpy.bot.server.client.demo.api.DemoService;
-import com.lpy.bot.server.client.demo.dto.RegisterReq;
 import com.lpy.bot.server.client.demo.dto.PayloadDemoResp;
+import com.lpy.bot.server.client.demo.dto.RegisterReq;
 import com.lpy.bot.server.commons.enums.DemoEnum;
-import com.lpy.bot.server.commons.security.HashUtil;
 import com.lpy.bot.server.commons.util.BeanCopyUtils;
-import com.lpy.bot.server.domain.shortmsg.ShortMsgGateway;
+import com.lpy.bot.server.domain.account.bo.UserRegisterBo;
 import com.lpy.bot.server.domain.account.entity.UserInfoEntity;
 import com.lpy.bot.server.domain.account.gateway.UserInfoGateway;
 import com.lpy.bot.server.domain.account.service.UserInfoDomain;
+import com.lpy.bot.server.domain.shortmsg.ShortMsgGateway;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -26,14 +26,15 @@ public class DemoServiceImpl implements DemoService {
 
     @Override
     public void register(RegisterReq req) {
-
+        UserRegisterBo bo = BeanCopyUtils.copy(req, UserRegisterBo.class);
+        userInfoDomain.register(bo);
         shortMsgGateway.mockSendMsg();
     }
 
     @Override
     public PayloadDemoResp payloadDemo(String id) {
         UserInfoEntity entity = userInfoGateway.queryById(id);
-        PayloadDemoResp resp=BeanCopyUtils.copy(entity, PayloadDemoResp.class);
+        PayloadDemoResp resp = BeanCopyUtils.copy(entity, PayloadDemoResp.class);
         resp.setDemoEnum(DemoEnum.DEMO1);
         return resp;
     }

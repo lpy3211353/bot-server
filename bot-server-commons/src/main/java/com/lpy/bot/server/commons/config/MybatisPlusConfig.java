@@ -11,9 +11,9 @@ import org.springframework.context.annotation.Configuration;
 public class MybatisPlusConfig {
 
     @Bean
-    public MybatisPlusInterceptor mybatisPlusInterceptor(){
-        MybatisPlusInterceptor interceptor=new MybatisPlusInterceptor();
-        PaginationInnerInterceptor paginationInnerInterceptor=new PaginationInnerInterceptor();
+    public MybatisPlusInterceptor mybatisPlusInterceptor() {
+        MybatisPlusInterceptor interceptor = new MybatisPlusInterceptor();
+        PaginationInnerInterceptor paginationInnerInterceptor = new PaginationInnerInterceptor();
         paginationInnerInterceptor.setDbType(DbType.MYSQL);
         paginationInnerInterceptor.setOverflow(true);
         interceptor.addInnerInterceptor(paginationInnerInterceptor);
@@ -21,7 +21,7 @@ public class MybatisPlusConfig {
     }
 
     @Bean
-    public ConfigurationCustomizer configurationCustomizer(){
+    public ConfigurationCustomizer configurationCustomizer() {
         return configuration -> configuration.setUseGeneratedShortKey(false);
     }
 }

@@ -7,7 +7,6 @@ import com.lpy.bot.server.domain.account.entity.GroupInfoEntity;
 import com.lpy.bot.server.domain.account.gateway.GroupInfoGateway;
 import com.lpy.bot.server.infra.userinfo.mapper.GroupInfoMapper;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 @Component
 public class GroupInfoGatewayImpl extends ServiceImpl<GroupInfoMapper, GroupInfoEntity>
