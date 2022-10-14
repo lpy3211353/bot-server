@@ -1,9 +1,10 @@
 ###
-POST http://localhost:8080/demo/demo
+POST http://localhost:8080/user/register
 Content-Type: application/json
 
 {
-  "qqNumber": "931731014"
+  "qq_number": "2652446227",
+  "qq_group": "123456789"
 }
 
 ###
@@ -11,7 +12,7 @@ POST http://localhost:8080/demo/payload
 Content-Type: application/json
 
 {
-  "id": "1580110904881655809"
+  "id": "95255139906085392619"
 }
 
 ###
@@ -19,5 +20,5 @@ POST http://localhost:8080/demo/domain
 Content-Type: application/json
 
 {
-  "qqNumber": "931731014"
+  "qq_number": "931731014"
 }

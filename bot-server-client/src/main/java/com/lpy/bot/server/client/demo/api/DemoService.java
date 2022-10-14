@@ -1,12 +1,12 @@
 package com.lpy.bot.server.client.demo.api;
 
-import com.lpy.bot.server.client.demo.dto.DemoReq;
 import com.lpy.bot.server.client.demo.dto.PayloadDemoResp;
+import com.lpy.bot.server.client.demo.dto.RegisterReq;
 
 public interface DemoService {
-    void demo(DemoReq req);
+    void register(RegisterReq req);
 
     PayloadDemoResp payloadDemo(String id);
 
-    void domainDemo(DemoReq req);
+    void domainDemo(RegisterReq req);
 }

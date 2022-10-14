@@ -7,7 +7,8 @@ import lombok.*;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class DemoReq {
+public class RegisterReq {
     private String id;
     private String qqNumber;
+    private String qqGroup;
 }

@@ -9,7 +9,10 @@ spring:
   jackson:
     serialization:
       FAIL_ON_EMPTY_BEANS: false
-
+    property-naming-strategy: SNAKE_CASE
+    locale: zh_CN
+    time-zone: GMT+8
+    default-property-inclusion: NON_NULL
 mybatis-plus:
   configuration:
     default-enum-type-handler: com.baomidou.mybatisplus.core.handlers.MybatisEnumTypeHandler

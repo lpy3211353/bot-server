@@ -1,14 +1,15 @@
 package com.lpy.bot.server.application.demo;
 
 import com.lpy.bot.server.client.demo.api.DemoService;
-import com.lpy.bot.server.client.demo.dto.DemoReq;
 import com.lpy.bot.server.client.demo.dto.PayloadDemoResp;
-import com.lpy.bot.server.commons.security.HashUtil;
+import com.lpy.bot.server.client.demo.dto.RegisterReq;
+import com.lpy.bot.server.commons.enums.DemoEnum;
 import com.lpy.bot.server.commons.util.BeanCopyUtils;
+import com.lpy.bot.server.domain.account.bo.UserRegisterBo;
+import com.lpy.bot.server.domain.account.entity.UserInfoEntity;
+import com.lpy.bot.server.domain.account.gateway.UserInfoGateway;
+import com.lpy.bot.server.domain.account.service.UserInfoDomain;
 import com.lpy.bot.server.domain.shortmsg.ShortMsgGateway;
-import com.lpy.bot.server.domain.userinfo.entity.UserInfoEntity;
-import com.lpy.bot.server.domain.userinfo.gateway.UserInfoGateway;
-import com.lpy.bot.server.domain.userinfo.service.UserInfoDomain;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -24,27 +25,22 @@ public class DemoServiceImpl implements DemoService {
     private final UserInfoDomain userInfoDomain;
 
     @Override
-    public void demo(DemoReq req) {
-        UserInfoEntity userInfoEntity = UserInfoEntity.builder()
-                .qqNumber(HashUtil.toSha256(req.getQqNumber()))
-                .build();
-        userInfoEntity.generatorUuid();
-        userInfoGateway.addUser(userInfoEntity);
+    public void register(RegisterReq req) {
+        UserRegisterBo bo = BeanCopyUtils.copy(req, UserRegisterBo.class);
+        userInfoDomain.register(bo);
         shortMsgGateway.mockSendMsg();
     }
 
     @Override
     public PayloadDemoResp payloadDemo(String id) {
         UserInfoEntity entity = userInfoGateway.queryById(id);
-        return BeanCopyUtils.copy(entity, PayloadDemoResp.class);
+        PayloadDemoResp resp = BeanCopyUtils.copy(entity, PayloadDemoResp.class);
+        resp.setDemoEnum(DemoEnum.DEMO1);
+        return resp;
     }
 
     @Override
-    public void domainDemo(DemoReq req) {
-        UserInfoEntity entity = UserInfoEntity.builder()
-                .qqNumber(HashUtil.toSha256(req.getQqNumber()))
-                .build();
-        entity.generatorUuid();
-        userInfoDomain.upsert(entity);
+    public void domainDemo(RegisterReq req) {
+
     }
 }

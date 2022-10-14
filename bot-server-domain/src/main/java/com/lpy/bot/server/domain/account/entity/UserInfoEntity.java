@@ -1,13 +1,13 @@
-package com.lpy.bot.server.domain.userinfo.entity;
+package com.lpy.bot.server.domain.account.entity;
 
 import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.lpy.bot.server.commons.util.NanoIdUtil;
 import lombok.*;
 
 import java.util.Date;
-import java.util.UUID;
 
 @Getter
 @Setter
@@ -21,6 +21,8 @@ public class UserInfoEntity {
     private String id;
 
     private byte[] qqNumber;
+
+    private String groupSerial;
     @TableField(fill = FieldFill.INSERT)
     private Date createTime;
 
@@ -28,6 +30,6 @@ public class UserInfoEntity {
     private String updateTime;
 
     public void generatorUuid() {
-        this.id = UUID.randomUUID().toString();
+        setId(NanoIdUtil.randomNanoId());
     }
 }

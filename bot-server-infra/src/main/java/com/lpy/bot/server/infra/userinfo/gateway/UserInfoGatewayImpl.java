@@ -2,8 +2,8 @@ package com.lpy.bot.server.infra.userinfo.gateway;
 
 import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.lpy.bot.server.domain.userinfo.entity.UserInfoEntity;
-import com.lpy.bot.server.domain.userinfo.gateway.UserInfoGateway;
+import com.lpy.bot.server.domain.account.entity.UserInfoEntity;
+import com.lpy.bot.server.domain.account.gateway.UserInfoGateway;
 import com.lpy.bot.server.infra.userinfo.mapper.UserInfoMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
