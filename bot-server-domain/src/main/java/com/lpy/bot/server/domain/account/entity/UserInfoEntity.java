@@ -1,4 +1,4 @@
-package com.lpy.bot.server.domain.userinfo.entity;
+package com.lpy.bot.server.domain.account.entity;
 
 import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;
@@ -8,7 +8,6 @@ import com.lpy.bot.server.commons.util.NanoIdUtil;
 import lombok.*;
 
 import java.util.Date;
-import java.util.UUID;
 
 @Getter
 @Setter
@@ -22,6 +21,8 @@ public class UserInfoEntity {
     private String id;
 
     private byte[] qqNumber;
+
+    private String groupSerial;
     @TableField(fill = FieldFill.INSERT)
     private Date createTime;
 

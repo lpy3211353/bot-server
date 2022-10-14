@@ -1,6 +1,6 @@
-package com.lpy.bot.server.domain.userinfo.gateway;
+package com.lpy.bot.server.domain.account.gateway;
 
-import com.lpy.bot.server.domain.userinfo.entity.UserInfoEntity;
+import com.lpy.bot.server.domain.account.entity.UserInfoEntity;
 
 public interface UserInfoGateway {
 

@@ -1,7 +1,7 @@
 package com.lpy.bot.server.application.demo.mapper;
 
 import com.lpy.bot.server.client.demo.dto.PayloadDemoResp;
-import com.lpy.bot.server.domain.userinfo.entity.UserInfoEntity;
+import com.lpy.bot.server.domain.account.entity.UserInfoEntity;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

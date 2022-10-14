@@ -1,9 +1,10 @@
 ###
-POST http://localhost:8080/demo/demo
+POST http://localhost:8080/user/register
 Content-Type: application/json
 
 {
-  "qq_number": "2652446227"
+  "qq_number": "2652446227",
+  "qq_group": "123456789"
 }
 
 ###
