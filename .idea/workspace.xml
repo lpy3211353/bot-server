@@ -4,9 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dd2e31a-62c9-4d3d-8098-477fed04703a" name="Changes" comment="chg: UUID改用NANOID">
+    <list default="true" id="7dd2e31a-62c9-4d3d-8098-477fed04703a" name="Changes" comment="style: 添加注释">
+      <change afterPath="$PROJECT_DIR$/bot-server-commons/src/main/java/com/lpy/bot/server/commons/config/MybatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot-server-commons/src/main/java/com/lpy/bot/server/commons/enums/DemoEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot-server-entry/src/test/java/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot-server-domain/src/main/java/com/lpy/bot/server/domain/userinfo/entity/UserInfoEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-domain/src/main/java/com/lpy/bot/server/domain/userinfo/entity/UserInfoEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot-server-app/src/main/java/com/lpy/bot/server/application/demo/DemoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-app/src/main/java/com/lpy/bot/server/application/demo/DemoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot-server-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot-server-client/src/main/java/com/lpy/bot/server/client/demo/dto/PayloadDemoResp.java" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-client/src/main/java/com/lpy/bot/server/client/demo/dto/PayloadDemoResp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot-server-commons/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-commons/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot-server-entry/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-entry/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot-server-entry/src/test/java/FunctionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-entry/src/test/java/FunctionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot-server-entry/src/test/java/api/Demo.http" beforeDir="false" afterPath="$PROJECT_DIR$/bot-server-entry/src/test/java/api/Demo.http" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,21 +86,25 @@
       <command value="mvn clean compile" />
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.Demo | #3">
+  <component name="RunManager" selected="HTTP Request.Demo | #2">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="bot-server-entry" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Demo | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/bot-server-entry/src/test/java/api/Demo.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="Demo | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/bot-server-entry/src/test/java/api/Demo.http" index="2" requestIdentifier="#2" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="Demo | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/bot-server-entry/src/test/java/api/Demo.http" index="3" requestIdentifier="#3" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="FunctionTest.NnoIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FunctionTest.doubleThreadTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bot-server-entry" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FunctionTest" />
-      <option name="METHOD_NAME" value="NnoIdTest" />
+      <option name="METHOD_NAME" value="doubleThreadTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -111,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.Demo | #3" />
-        <item itemvalue="HTTP Request.Demo | #1" />
-        <item itemvalue="Spring Boot.Application" />
-        <item itemvalue="JUnit.FunctionTest.NnoIdTest" />
         <item itemvalue="HTTP Request.Demo | #2" />
+        <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="HTTP Request.Demo | #1" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="JUnit.FunctionTest.doubleThreadTest" />
       </list>
     </recent_temporary>
   </component>
@@ -127,7 +141,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665478444333</updated>
-      <workItem from="1665478446277" duration="28821000" />
+      <workItem from="1665478446277" duration="34462000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: 架构调整">
       <created>1665542420140</created>
@@ -164,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665630058340</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="style: 添加注释">
+      <created>1665631823630</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665631823630</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +208,7 @@
     <MESSAGE value="fix: 修复报错问题" />
     <MESSAGE value="style: 代码格式化" />
     <MESSAGE value="chg: UUID改用NANOID" />
-    <option name="LAST_COMMIT_MESSAGE" value="chg: UUID改用NANOID" />
+    <MESSAGE value="style: 添加注释" />
+    <option name="LAST_COMMIT_MESSAGE" value="style: 添加注释" />
   </component>
 </project>

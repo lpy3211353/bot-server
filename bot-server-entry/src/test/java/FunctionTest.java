@@ -6,4 +6,10 @@ public class FunctionTest {
     void NnoIdTest() {
         System.out.println(NanoIdUtil.randomNanoId());
     }
+
+    @Test
+    void doubleThreadTest() {
+
+    }
+
 }

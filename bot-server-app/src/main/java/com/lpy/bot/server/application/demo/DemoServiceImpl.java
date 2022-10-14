@@ -3,6 +3,7 @@ package com.lpy.bot.server.application.demo;
 import com.lpy.bot.server.client.demo.api.DemoService;
 import com.lpy.bot.server.client.demo.dto.DemoReq;
 import com.lpy.bot.server.client.demo.dto.PayloadDemoResp;
+import com.lpy.bot.server.commons.enums.DemoEnum;
 import com.lpy.bot.server.commons.security.HashUtil;
 import com.lpy.bot.server.commons.util.BeanCopyUtils;
 import com.lpy.bot.server.domain.shortmsg.ShortMsgGateway;
@@ -36,7 +37,9 @@ public class DemoServiceImpl implements DemoService {
     @Override
     public PayloadDemoResp payloadDemo(String id) {
         UserInfoEntity entity = userInfoGateway.queryById(id);
-        return BeanCopyUtils.copy(entity, PayloadDemoResp.class);
+        PayloadDemoResp resp=BeanCopyUtils.copy(entity, PayloadDemoResp.class);
+        resp.setDemoEnum(DemoEnum.DEMO1);
+        return resp;
     }
 
     @Override

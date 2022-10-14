@@ -28,5 +28,9 @@
         <optional>true</optional>
         <version>1.18.24</version>
     </dependency>
+    <dependency>
+        <groupId>com.lpy</groupId>
+        <artifactId>bot-server-commons</artifactId>
+    </dependency>
 </dependencies>
 </project>
